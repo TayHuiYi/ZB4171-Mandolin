@@ -1,0 +1,25 @@
+N E X T F L O W  ~  version 22.10.6
+Launching `main.nf` [nauseous_williams] DSL1 - revision: d0b5d6b1b3
+[-        ] process > fastqc -
+
+executor >  local (1)
+[95/0d6ae8] process > fastqc (2) [  0%] 0 of 2
+
+executor >  local (1)
+[95/0d6ae8] process > fastqc (2) [  0%] 0 of 2
+
+executor >  local (2)
+[95/0d6ae8] process > fastqc (2) [ 50%] 1 of 2
+
+executor >  local (2)
+[d9/12027b] process > fastqc (1) [100%] 2 of 2 ✔
+
+executor >  local (2)
+[d9/12027b] process > fastqc (1) [100%] 2 of 2 ✔
+WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Completed at: 03-Nov-2023 00:11:52
+Duration    : 14m 26s
+CPU hours   : 3.8
+Succeeded   : 2
+
+
