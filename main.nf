@@ -11,12 +11,12 @@ Channel.fromPath(file(params.input))
                 def strandedness = row[3]
 
                 return [sample_ID,read1,read2]
-        }.set { ch_sample_fastq }
+        }.into{ ch_sample_fastq; ch_sample_fastq2 }
 
 process fastqc {
         publishDir path: "${params.publishdir}/1_fastqc", pattern: "*.html"
 	container "staphb/fastqc"
-        label "process_low"
+        label "process_high"
 
         input:
         tuple val (sample_id), path (read1), path (read2) from ch_sample_fastq
@@ -26,6 +26,6 @@ process fastqc {
 
         script:
         """
-        fastqc -t 10 ${read1} ${read2}
+        fastqc -t 32 ${read1} ${read2}
         """
 }
