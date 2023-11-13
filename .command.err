@@ -1,8 +1,0 @@
-TrimmomaticPE: Started with arguments: -phred33 SRR10277272_1.fastq.gz SRR10277272_2.fastq.gz trimmed_SRR10277272_R1_paired.fastq.gz trimmed_SRR10277272_R1_unpaired.fastq.gz trimmed_SRR10277272_R2_paired.fastq.gz trimmed_SRR10277272_R2_unpaired.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:50 ILLUMINACLIP:/home/ec2-user/ZB4171-Mandolin/TruSeq3-PE.fa:2:30:10 -threads 16 -trimlog SRR10277272_trimlog.txt
-Multiple cores found: Using 16 threads
-Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
-ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
-Exception in thread "main" java.lang.RuntimeException: Unknown trimmer: -threads
-	at org.usadellab.trimmomatic.trim.TrimmerFactory.makeTrimmer(TrimmerFactory.java:60)
-	at org.usadellab.trimmomatic.TrimmomaticPE.run(TrimmomaticPE.java:496)
-	at org.usadellab.trimmomatic.Trimmomatic.main(Trimmomatic.java:35)

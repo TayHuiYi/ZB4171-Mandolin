@@ -1,44 +1,25 @@
 N E X T F L O W  ~  version 22.10.6
-Launching `main_v2.nf` [cranky_lamarr] DSL1 - revision: 27dfd0be75
-[-        ] process > fastqc                 -
-[-        ] process > trimmomatic            -
-[-        ] process > interleave_fastq       -
-[-        ] process > mitobim_reconstruction -
+Launching `main.nf` [nauseous_williams] DSL1 - revision: d0b5d6b1b3
+[-        ] process > fastqc -
 
 executor >  local (1)
-[0c/546a1b] process > fastqc (2)                 [100%] 2 of 2, cached: 2 ✔
-[23/3ed2d4] process > trimmomatic (2)            [100%] 2 of 2, cached: 2 ✔
-[86/0169aa] process > interleave_fastq (2)       [100%] 2 of 2, cached: 2 ✔
-[44/39128e] process > mitobim_reconstruction (1) [  0%] 0 of 2
+[95/0d6ae8] process > fastqc (2) [  0%] 0 of 2
+
+executor >  local (1)
+[95/0d6ae8] process > fastqc (2) [  0%] 0 of 2
 
 executor >  local (2)
-[0c/546a1b] process > fastqc (2)                 [100%] 2 of 2, cached: 2 ✔
-[23/3ed2d4] process > trimmomatic (2)            [100%] 2 of 2, cached: 2 ✔
-[86/0169aa] process > interleave_fastq (2)       [100%] 2 of 2, cached: 2 ✔
-[fe/a78780] process > mitobim_reconstruction (2) [ 50%] 1 of 2
+[95/0d6ae8] process > fastqc (2) [ 50%] 1 of 2
 
 executor >  local (2)
-[0c/546a1b] process > fastqc (2)                 [100%] 2 of 2, cached: 2 ✔
-[23/3ed2d4] process > trimmomatic (2)            [100%] 2 of 2, cached: 2 ✔
-[86/0169aa] process > interleave_fastq (2)       [100%] 2 of 2, cached: 2 ✔
-[fe/a78780] process > mitobim_reconstruction (2) [ 50%] 1 of 2
+[d9/12027b] process > fastqc (1) [100%] 2 of 2 ✔
 
 executor >  local (2)
-[0c/546a1b] process > fastqc (2)                 [100%] 2 of 2, cached: 2 ✔
-[23/3ed2d4] process > trimmomatic (2)            [100%] 2 of 2, cached: 2 ✔
-[86/0169aa] process > interleave_fastq (2)       [100%] 2 of 2, cached: 2 ✔
-[fe/a78780] process > mitobim_reconstruction (2) [100%] 2 of 2 ✔
-
-executor >  local (2)
-[0c/546a1b] process > fastqc (2)                 [100%] 2 of 2, cached: 2 ✔
-[23/3ed2d4] process > trimmomatic (2)            [100%] 2 of 2, cached: 2 ✔
-[86/0169aa] process > interleave_fastq (2)       [100%] 2 of 2, cached: 2 ✔
-[fe/a78780] process > mitobim_reconstruction (2) [100%] 2 of 2 ✔
+[d9/12027b] process > fastqc (1) [100%] 2 of 2 ✔
 WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
-Completed at: 13-Nov-2023 19:41:09
-Duration    : 1h 34m 6s
-CPU hours   : 48.8 (48.6% cached)
+Completed at: 03-Nov-2023 00:11:52
+Duration    : 14m 26s
+CPU hours   : 3.8
 Succeeded   : 2
-Cached      : 6
 
 
