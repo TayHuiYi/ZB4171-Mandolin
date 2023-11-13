@@ -66,18 +66,18 @@ process trimmomatic {
 process interleave_fastq {
 	publishDir path: "${params.publishdir}/3_interleaved_fastq"
         conda "${params.yml}"
-	label "process_medium"
+	label "process_high"
 
 	input:
 	tuple val(sample_id), path(read1_paired), path(read2_paired) from ch_trim_paired
 
 	output:
-	tuple val(sample_id), path("*_interleaved_modified.fastq") into ch_interleaved_fastq
+	tuple val(sample_id), path("*_interleaved_modified.fastq.gz") into ch_interleaved_fastq
 
 	script:
 	"""
 	reformat.sh in1=${read1_paired} in2=${read2_paired} out=${sample_id}_interleaved.fastq.gz fastawrap=0
-	zcat ${sample_id}_interleaved.fastq.gz | awk '{if(NR%4==1) {split(\$1, a, "/"); \$1 = a[1] (NR%8<=3 ? "/1" : "/2");} print}' | gzip > ${sample_id}_interleaved_modified.fastq 
+	zcat ${sample_id}_interleaved.fastq.gz | awk '{if(NR%4==1) {split(\$1, a, "/"); \$1 = a[1] (NR%8<=3 ? "/1" : "/2");} print}' | gzip > ${sample_id}_interleaved_modified.fastq.gz 
 	"""
 }
 
