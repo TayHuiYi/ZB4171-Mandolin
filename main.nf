@@ -98,3 +98,21 @@ process mitobim_reconstruction {
 	cd /home/data/${sample_id}
 	"""
 }
+
+process fastqc_trimmed {
+        publishDir path: "${params.publishdir}/1_fastqc", pattern: "*.html"
+        container "staphb/fastqc"
+        label "process_high"
+
+        input:
+        tuple val (sample_id), path (read1), path (read2) from ch_trim_paired2
+
+        output:
+        tuple val (sample_id), path("*.html")
+
+        script:
+        """
+        fastqc -t 16 ${read1} ${read2}
+        """
+}
+

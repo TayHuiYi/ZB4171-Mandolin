@@ -1,0 +1,141 @@
+Nov-13 18:07:02.365 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_v2.nf -resume -w /newvol/
+Nov-13 18:07:02.461 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.6
+Nov-13 18:07:02.478 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/ec2-user/.nextflow/plugins; core-plugins: nf-amazon@1.11.3,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.3
+Nov-13 18:07:02.487 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-13 18:07:02.488 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-13 18:07:02.491 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Nov-13 18:07:02.500 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-13 18:07:02.516 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/ec2-user/ZB4171-Mandolin/nextflow.config
+Nov-13 18:07:02.517 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/ec2-user/ZB4171-Mandolin/nextflow.config
+Nov-13 18:07:02.536 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Nov-13 18:07:03.165 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=1 from config declaration
+Nov-13 18:07:03.180 [main] INFO  nextflow.cli.CmdRun - Launching `main_v2.nf` [cranky_lamarr] DSL1 - revision: 27dfd0be75
+Nov-13 18:07:03.181 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-13 18:07:03.181 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Nov-13 18:07:03.189 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/ec2-user/.nextflow/secrets/store.json
+Nov-13 18:07:03.192 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@60dd0587] - activable => nextflow.secret.LocalSecretsProvider@60dd0587
+Nov-13 18:07:03.254 [main] DEBUG nextflow.Session - Session UUID: 595d70aa-350b-4d0f-9b5d-9fb21850ef0b
+Nov-13 18:07:03.254 [main] DEBUG nextflow.Session - Run name: cranky_lamarr
+Nov-13 18:07:03.255 [main] DEBUG nextflow.Session - Executor pool size: 16
+Nov-13 18:07:03.266 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-13 18:07:03.287 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.6 build 5843
+  Created: 23-01-2023 23:20 UTC (24-01-2023 07:20 SGST)
+  System: Linux 6.1.56-82.125.amzn2023.x86_64
+  Runtime: Groovy 3.0.13 on OpenJDK 64-Bit Server VM 11.0.13+7-b1751.21
+  Encoding: UTF-8 (UTF-8)
+  Process: 298824@ip-172-31-44-1.ap-southeast-1.compute.internal [172.31.44.1]
+  CPUs: 16 - Mem: 30.6 GB (755.2 MB) - Swap: 0 (0)
+Nov-13 18:07:03.324 [main] DEBUG nextflow.Session - Work-dir: /newvol [ext2/ext3]
+Nov-13 18:07:03.324 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ec2-user/ZB4171-Mandolin/bin
+Nov-13 18:07:03.334 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-13 18:07:03.344 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-13 18:07:03.421 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-13 18:07:03.435 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Nov-13 18:07:03.530 [main] DEBUG nextflow.Session - Session start
+Nov-13 18:07:03.534 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/ec2-user/out/pipeline_info/trace.txt
+Nov-13 18:07:03.909 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-13 18:07:04.083 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name fastqc
+Nov-13 18:07:04.086 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-13 18:07:04.086 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-13 18:07:04.092 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-13 18:07:04.096 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=30.6 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Nov-13 18:07:04.162 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name trimmomatic
+Nov-13 18:07:04.163 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-13 18:07:04.164 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-13 18:07:04.171 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name interleave_fastq
+Nov-13 18:07:04.172 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-13 18:07:04.172 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-13 18:07:04.177 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name mitobim_reconstruction
+Nov-13 18:07:04.178 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-13 18:07:04.178 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-13 18:07:04.184 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: trimmomatic, interleave_fastq, fastqc, mitobim_reconstruction
+Nov-13 18:07:04.185 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-13 18:07:04.185 [main] DEBUG nextflow.Session - Session await
+Nov-13 18:07:04.290 [Actor Thread 17] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/home/ec2-user/ZB4171-Mandolin/env.yml; path=/newvol/conda/nextflow_env-fb806784f67bd812f8164678c8e1fa8e
+Nov-13 18:07:04.347 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [20/2edd1a] Cached process > fastqc (1)
+Nov-13 18:07:04.347 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [65/5b7d2b] Cached process > trimmomatic (1)
+Nov-13 18:07:04.347 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [0c/546a1b] Cached process > fastqc (2)
+Nov-13 18:07:04.347 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [23/3ed2d4] Cached process > trimmomatic (2)
+Nov-13 18:07:04.391 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [de/5da940] Cached process > interleave_fastq (1)
+Nov-13 18:07:04.392 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [86/0169aa] Cached process > interleave_fastq (2)
+Nov-13 18:07:04.443 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-13 18:07:04.445 [Task submitter] INFO  nextflow.Session - [44/39128e] Submitted process > mitobim_reconstruction (1)
+Nov-13 18:12:04.233 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:12:04.491 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:17:04.252 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:17:04.521 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:22:04.266 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:22:04.552 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:27:04.281 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:27:04.580 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:32:04.289 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:32:04.609 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:37:04.294 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:37:04.640 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:42:04.301 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:42:04.667 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:47:04.307 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:47:04.694 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:52:04.308 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:52:04.721 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 18:57:04.314 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 18:57:04.747 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:02:04.326 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 19:02:04.773 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:07:04.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 19:07:04.800 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:12:04.429 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 7; name: mitobim_reconstruction (1); status: RUNNING; exit: -; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 19:12:04.827 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: NEW; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:16:05.917 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: mitobim_reconstruction (1); status: COMPLETED; exit: 0; error: -; workDir: /newvol/44/39128e24900461692e5c4e333028da]
+Nov-13 19:16:05.922 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-13 19:16:05.922 [Task submitter] INFO  nextflow.Session - [fe/a78780] Submitted process > mitobim_reconstruction (2)
+Nov-13 19:17:04.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: RUNNING; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:22:04.456 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: RUNNING; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:27:04.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: RUNNING; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:32:04.558 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: RUNNING; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:37:04.655 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 8; name: mitobim_reconstruction (2); status: RUNNING; exit: -; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:41:08.807 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: mitobim_reconstruction (2); status: COMPLETED; exit: 0; error: -; workDir: /newvol/fe/a78780ac4ac1d5b075d8c775c9e5b3]
+Nov-13 19:41:08.810 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-13 19:41:08.812 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-13 19:41:08.816 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=6; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1d 1h 4m 23s; failedDuration=0ms; cachedDuration=23h 41m 22s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=16; peakMemory=30 GB; ]
+Nov-13 19:41:08.816 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Nov-13 19:41:08.817 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Nov-13 19:41:08.845 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":{"mean":47.3,"min":41.92,"q1":44.61,"q2":47.3,"q3":49.99,"max":52.68,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"process":"trimmomatic","mem":{"mean":643547136,"min":637702144,"q1":640624640,"q2":643547136,"q3":646469632,"max":649392128,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"memUsage":{"mean":3.75,"min":3.71,"q1":3.73,"q2":3.75,"q3":3.76,"max":3.78,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"timeUsage":{"mean":6.04,"min":5.55,"q1":5.79,"q2":6.04,"q3":6.29,"max":6.53,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"vmem":{"mean":7554105344,"min":7383711744,"q1":7468908544,"q2":7554105344,"q3":7639302144,"max":7724498944,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"reads":{"mean":10646569526.5,"min":9710433798,"q1":10178501662.25,"q2":10646569526.5,"q3":11114637390.75,"max":11582705255,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"cpu":{"mean":283.8,"min":251.5,"q1":267.65,"q2":283.8,"q3":299.95,"max":316.1,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"time":{"mean":2609016,"min":2396342,"q1":2502679,"q2":2609016,"q3":2715353,"max":2821690,"minLabel":"trimmomatic (1)","maxLabel":"trimmomatic (2)","q1Label":"trimmomatic (1)","q2Label":"trimmomatic (1)","q3Label":"trimmomatic (1)"},"writes":{"mean":18965012554.5,"min":18215511143,"q1":18590261848.75,"q2":18965012554.5,"q3":19339763260.25,"max":19714513966,"minLabel":"trimmomatic (2)","maxLabel":"trimmomatic (1)","q1Label":"trimmomatic (2)","q2Label":"trimmomatic (2)","q3Label":"trimmomatic (2)"}},{"cpuUsage":{"mean":33.33,"min":33.28,"q1":33.31,"q2":33.33,"q3":33.36,"max":33.38,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"process":"fastqc","mem":{"mean":3633602560,"min":3473879040,"q1":3553740800,"q2":3633602560,"q3":3713464320,"max":3793326080,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"memUsage":{"mean":21.15,"min":20.22,"q1":20.69,"q2":21.15,"q3":21.62,"max":22.08,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"timeUsage":{"mean":0.95,"min":0.77,"q1":0.86,"q2":0.95,"q3":1.04,"max":1.14,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"vmem":{"mean":20529659904,"min":20529659904,"q1":20529659904,"q2":20529659904,"q3":20529659904,"max":20529659904,"minLabel":"fastqc (2)","maxLabel":"fastqc (1)","q1Label":"fastqc (2)","q2Label":"fastqc (2)","q3Label":"fastqc (2)"},"reads":{"mean":10657334517.5,"min":9721264499,"q1":10189299508.25,"q2":10657334517.5,"q3":11125369526.75,"max":11593404536,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"cpu":{"mean":200,"min":199.7,"q1":199.85,"q2":200,"q3":200.15,"max":200.3,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"time":{"mean":411379.5,"min":331340,"q1":371359.75,"q2":411379.5,"q3":451399.25,"max":491419,"minLabel":"fastqc (1)","maxLabel":"fastqc (2)","q1Label":"fastqc (1)","q2Label":"fastqc (1)","q3Label":"fastqc (1)"},"writes":{"mean":3648482.5,"min":3460834,"q1":3554658.25,"q2":3648482.5,"q3":3742306.75,"max":3836131,"minLabel":"fastqc (2)","maxLabel":"fastqc (1)","q1Label":"fastqc (2)","q2Label":"fastqc (2)","q3Label":"fastqc (2)"}},{"cpuUsage":{"mean":23.27,"min":22.4,"q1":22.83,"q2":23.27,"q3":23.7,"max":24.13,"minLabel":"interleave_fastq (2)","maxLabel":"interleave_fastq (1)","q1Label":"interleave_fastq (2)","q2Label":"interleave_fastq (2)","q3Label":"interleave_fastq (2)"},"process":"interleave_fastq","mem":{"mean":286945280,"min":284819456,"q1":285882368,"q2":286945280,"q3":288008192,"max":289071104,"minLabel":"interleave_fastq (2)","maxLabel":"interleave_fastq (1)","q1Label":"interleave_fastq (2)","q2Label":"interleave_fastq (2)","q3Label":"interleave_fastq (2)"},"memUsage":{"mean":1.67,"min":1.66,"q1":1.66,"q2":1.67,"q3":1.68,"max":1.68,"minLabel":"interleave_fastq (2)","maxLabel":"interleave_fastq (1)","q1Label":"interleave_fastq (2)","q2Label":"interleave_fastq (2)","q3Label":"interleave_fastq (2)"},"timeUsage":{"mean":9.46,"min":6.31,"q1":7.89,"q2":9.46,"q3":11.03,"max":12.61,"minLabel":"interleave_fastq (1)","maxLabel":"interleave_fastq (2)","q1Label":"interleave_fastq (1)","q2Label":"interleave_fastq (1)","q3Label":"interleave_fastq (1)"},"vmem":{"mean":15041951744,"min":14872653824,"q1":14957302784,"q2":15041951744,"q3":15126600704,"max":15211249664,"minLabel":"interleave_fastq (2)","maxLabel":"interleave_fastq (1)","q1Label":"interleave_fastq (2)","q2Label":"interleave_fastq (2)","q3Label":"interleave_fastq (2)"},"reads":{"mean":166502541537,"min":126490514532,"q1":146496528034.5,"q2":166502541537,"q3":186508555039.5,"max":206514568542,"minLabel":"interleave_fastq (1)","maxLabel":"interleave_fastq (2)","q1Label":"interleave_fastq (1)","q2Label":"interleave_fastq (1)","q3Label":"interleave_fastq (1)"},"cpu":{"mean":139.6,"min":134.4,"q1":137,"q2":139.6,"q3":142.2,"max":144.8,"minLabel":"interleave_fastq (2)","maxLabel":"interleave_fastq (1)","q1Label":"interleave_fastq (2)","q2Label":"interleave_fastq (2)","q3Label":"interleave_fastq (2)"},"time":{"mean":4086399.5,"min":2727400,"q1":3406899.75,"q2":4086399.5,"q3":4765899.25,"max":5445399,"minLabel":"interleave_fastq (1)","maxLabel":"interleave_fastq (2)","q1Label":"interleave_fastq (1)","q2Label":"interleave_fastq (1)","q3Label":"interleave_fastq (1)"},"writes":{"mean":165717400217.5,"min":125670254455,"q1":145693827336.25,"q2":165717400217.5,"q3":185740973098.75,"max":205764545980,"minLabel":"interleave_fastq (1)","maxLabel":"interleave_fastq (2)","q1Label":"interleave_fastq (1)","q2Label":"interleave_fastq (1)","q3Label":"interleave_fastq (1)"}},{"cpuUsage":{"mean":6.23,"min":6.23,"q1":6.23,"q2":6.23,"q3":6.23,"max":6.23,"minLabel":"mitobim_reconstruction (2)","maxLabel":"mitobim_reconstruction (1)","q1Label":"mitobim_reconstruction (2)","q2Label":"mitobim_reconstruction (2)","q3Label":"mitobim_reconstruction (2)"},"process":"mitobim_reconstruction","mem":{"mean":377722880,"min":354111488,"q1":365917184,"q2":377722880,"q3":389528576,"max":401334272,"minLabel":"mitobim_reconstruction (1)","maxLabel":"mitobim_reconstruction (2)","q1Label":"mitobim_reconstruction (1)","q2Label":"mitobim_reconstruction (1)","q3Label":"mitobim_reconstruction (1)"},"memUsage":{"mean":1.17,"min":1.1,"q1":1.14,"q2":1.17,"q3":1.21,"max":1.25,"minLabel":"mitobim_reconstruction (1)","maxLabel":"mitobim_reconstruction (2)","q1Label":"mitobim_reconstruction (1)","q2Label":"mitobim_reconstruction (1)","q3Label":"mitobim_reconstruction (1)"},"timeUsage":{"mean":3.92,"min":2.09,"q1":3,"q2":3.92,"q3":4.83,"max":5.75,"minLabel":"mitobim_reconstruction (2)","maxLabel":"mitobim_reconstruction (1)","q1Label":"mitobim_reconstruction (2)","q2Label":"mitobim_reconstruction (2)","q3Label":"mitobim_reconstruction (2)"},"vmem":{"mean":562616320,"min":548270080,"q1":555443200,"q2":562616320,"q3":569789440,"max":576962560,"minLabel":"mitobim_reconstruction (1)","maxLabel":"mitobim_reconstruction (2)","q1Label":"mitobim_reconstruction (1)","q2Label":"mitobim_reconstruction (1)","q3Label":"mitobim_reconstruction (1)"},"reads":{"mean":44684498431.5,"min":28030320454,"q1":36357409442.75,"q2":44684498431.5,"q3":53011587420.25,"max":61338676409,"minLabel":"mitobim_reconstruction (2)","maxLabel":"mitobim_reconstruction (1)","q1Label":"mitobim_reconstruction (2)","q2Label":"mitobim_reconstruction (2)","q3Label":"mitobim_reconstruction (2)"},"cpu":{"mean":99.65,"min":99.6,"q1":99.63,"q2":99.65,"q3":99.68,"max":99.7,"minLabel":"mitobim_reconstruction (2)","maxLabel":"mitobim_reconstruction (1)","q1Label":"mitobim_reconstruction (2)","q2Label":"mitobim_reconstruction (2)","q3Label":"mitobim_reconstruction (2)"},"time":{"mean":2820712.5,"min":1501429,"q1":2161070.75,"q2":2820712.5,"q3":3480354.25,"max":4139996,"minLabel":"mitobim_reconstruction (2)","maxLabel":"mitobim_reconstruction (1)","q1Label":"mitobim_reconstruction (2)","q2Label":"mitobim_reconstruction (2)","q3Label":"mitobim_reconstruction (2)"},"writes":{"mean":175995966,"min":50529362,"q1":113262664,"q2":175995966,"q3":238729268,"max":301462570,"minLabel":"mitobim_reconstruction (1)","maxLabel":"mitobim_reconstruction (2)","q1Label":"mitobim_reconstruction (1)","q2Label":"mitobim_reconstruction (1)","q3Label":"mitobim_reconstruction (1)"}}]
+Nov-13 19:41:09.392 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Nov-13 19:41:09.465 [main] WARN  nextflow.dag.GraphvizRenderer - Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Nov-13 19:41:09.672 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-13 19:41:09.683 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Nov-13 19:41:09.684 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
