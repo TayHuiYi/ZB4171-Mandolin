@@ -1,25 +1,300 @@
 N E X T F L O W  ~  version 22.10.6
-Launching `main.nf` [nauseous_williams] DSL1 - revision: d0b5d6b1b3
-[-        ] process > fastqc -
+Launching `main_v2.nf` [admiring_lumiere] DSL1 - revision: 3efac6e391
+[-        ] process > fastqc                 -
+[-        ] process > trimmomatic            -
+[-        ] process > interleave_fastq       -
+[-        ] process > mitobim_reconstruction -
 
-executor >  local (1)
-[95/0d6ae8] process > fastqc (2) [  0%] 0 of 2
+executor >  local (12)
+[ff/c93219] process > fastqc (11)            [ 45%] 5 of 11, cached: 5
+[1e/6181e9] process > trimmomatic (9)        [  9%] 1 of 11, cached: 1
+[-        ] process > interleave_fastq       [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
 
-executor >  local (1)
-[95/0d6ae8] process > fastqc (2) [  0%] 0 of 2
+executor >  local (16)
+[ff/c93219] process > fastqc (11)            [ 45%] 5 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[-        ] process > interleave_fastq       [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
 
-executor >  local (2)
-[95/0d6ae8] process > fastqc (2) [ 50%] 1 of 2
+executor >  local (17)
+[2c/c9de6c] process > fastqc (10)            [ 54%] 6 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
 
-executor >  local (2)
-[d9/12027b] process > fastqc (1) [100%] 2 of 2 ✔
+executor >  local (17)
+[2c/c9de6c] process > fastqc (10)            [ 54%] 6 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
 
-executor >  local (2)
-[d9/12027b] process > fastqc (1) [100%] 2 of 2 ✔
-WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
-Completed at: 03-Nov-2023 00:11:52
-Duration    : 14m 26s
-CPU hours   : 3.8
-Succeeded   : 2
+executor >  local (17)
+[43/28e153] process > fastqc (9)             [ 63%] 7 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
 
+executor >  local (17)
+[81/9c8fc7] process > fastqc (7)             [ 72%] 8 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
 
+executor >  local (17)
+[ff/c93219] process > fastqc (11)            [ 81%] 9 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (17)
+[f5/43d325] process > fastqc (6)             [ 90%] 10 of 11, cached: 5
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (17)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[54/350838] process > trimmomatic (6)        [  9%] 1 of 11, cached: 1
+[2b/855ae9] process > interleave_fastq (1)   [  0%] 0 of 1
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (18)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[9f/fdc94e] process > trimmomatic (2)        [ 18%] 2 of 11, cached: 1
+[e2/f8ae1a] process > interleave_fastq (2)   [  0%] 0 of 2
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (18)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[9f/fdc94e] process > trimmomatic (2)        [ 18%] 2 of 11, cached: 1
+[e2/f8ae1a] process > interleave_fastq (2)   [  0%] 0 of 2
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (19)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[2b/7fbe77] process > trimmomatic (1)        [ 27%] 3 of 11, cached: 1
+[14/87d00a] process > interleave_fastq (3)   [  0%] 0 of 3
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (20)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[c9/0e56d8] process > trimmomatic (4)        [ 36%] 4 of 11, cached: 1
+[fd/049d6f] process > interleave_fastq (4)   [  0%] 0 of 4
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (21)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[47/55fa95] process > trimmomatic (10)       [ 45%] 5 of 11, cached: 1
+[d4/e3308b] process > interleave_fastq (5)   [  0%] 0 of 5
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (21)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[47/55fa95] process > trimmomatic (10)       [ 45%] 5 of 11, cached: 1
+[d4/e3308b] process > interleave_fastq (5)   [  0%] 0 of 5
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (22)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[6a/022a45] process > trimmomatic (3)        [ 54%] 6 of 11, cached: 1
+[a0/c4301b] process > interleave_fastq (6)   [  0%] 0 of 6
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (23)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[1e/6181e9] process > trimmomatic (9)        [ 63%] 7 of 11, cached: 1
+[13/cbcb02] process > interleave_fastq (7)   [  0%] 0 of 7
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (23)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[41/ba311f] process > trimmomatic (7)        [ 72%] 8 of 11, cached: 1
+[13/cbcb02] process > interleave_fastq (7)   [  0%] 0 of 7
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (24)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[41/ba311f] process > trimmomatic (7)        [ 72%] 8 of 11, cached: 1
+[f0/ad9e90] process > interleave_fastq (8)   [  0%] 0 of 8
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (25)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[71/72fd2f] process > trimmomatic (11)       [ 81%] 9 of 11, cached: 1
+[4f/0adfc0] process > interleave_fastq (9)   [  0%] 0 of 9
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (25)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[71/72fd2f] process > trimmomatic (11)       [ 81%] 9 of 11, cached: 1
+[4f/0adfc0] process > interleave_fastq (9)   [  0%] 0 of 9
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (26)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[54/350838] process > trimmomatic (6)        [ 90%] 10 of 11, cached: 1
+[82/e4fe9b] process > interleave_fastq (10)  [  0%] 0 of 10
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (27)
+[54/681b01] process > fastqc (5)             [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)        [100%] 11 of 11, cached: 1 ✔
+[ac/a85002] process > interleave_fastq (11)  [  0%] 0 of 11
+[-        ] process > mitobim_reconstruction -
+
+executor >  local (28)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[2b/855ae9] process > interleave_fastq (1)       [  9%] 1 of 11
+[9f/3bc053] process > mitobim_reconstruction (1) [  0%] 0 of 1
+
+executor >  local (29)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[14/87d00a] process > interleave_fastq (3)       [ 18%] 2 of 11
+[11/305d72] process > mitobim_reconstruction (2) [  0%] 0 of 2
+
+executor >  local (29)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[14/87d00a] process > interleave_fastq (3)       [ 18%] 2 of 11
+[11/305d72] process > mitobim_reconstruction (2) [  0%] 0 of 2
+
+executor >  local (30)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[e2/f8ae1a] process > interleave_fastq (2)       [ 27%] 3 of 11
+[cb/64486a] process > mitobim_reconstruction (3) [  0%] 0 of 3
+
+executor >  local (30)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[e2/f8ae1a] process > interleave_fastq (2)       [ 27%] 3 of 11
+[cb/64486a] process > mitobim_reconstruction (3) [  0%] 0 of 3
+
+executor >  local (31)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[fd/049d6f] process > interleave_fastq (4)       [ 36%] 4 of 11
+[87/f05788] process > mitobim_reconstruction (4) [  0%] 0 of 4
+
+executor >  local (31)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[fd/049d6f] process > interleave_fastq (4)       [ 36%] 4 of 11
+[9f/3bc053] process > mitobim_reconstruction (1) [ 25%] 1 of 4
+
+executor >  local (32)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[a0/c4301b] process > interleave_fastq (6)       [ 45%] 5 of 11
+[14/a3e772] process > mitobim_reconstruction (5) [ 20%] 1 of 5
+
+executor >  local (32)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[a0/c4301b] process > interleave_fastq (6)       [ 45%] 5 of 11
+[11/305d72] process > mitobim_reconstruction (2) [ 40%] 2 of 5
+
+executor >  local (32)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[a0/c4301b] process > interleave_fastq (6)       [ 45%] 5 of 11
+[cb/64486a] process > mitobim_reconstruction (3) [ 60%] 3 of 5
+
+executor >  local (32)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[a0/c4301b] process > interleave_fastq (6)       [ 45%] 5 of 11
+[87/f05788] process > mitobim_reconstruction (4) [ 80%] 4 of 5
+
+executor >  local (33)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[d4/e3308b] process > interleave_fastq (5)       [ 54%] 6 of 11
+[9b/dcd966] process > mitobim_reconstruction (6) [ 66%] 4 of 6
+
+executor >  local (33)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[d4/e3308b] process > interleave_fastq (5)       [ 54%] 6 of 11
+[9b/dcd966] process > mitobim_reconstruction (6) [ 66%] 4 of 6
+
+executor >  local (34)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[ac/a85002] process > interleave_fastq (11)      [ 63%] 7 of 11
+[5c/23758e] process > mitobim_reconstruction (7) [ 57%] 4 of 7
+
+executor >  local (35)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[13/cbcb02] process > interleave_fastq (7)       [ 72%] 8 of 11
+[42/b0ceb2] process > mitobim_reconstruction (8) [ 50%] 4 of 8
+
+executor >  local (35)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[13/cbcb02] process > interleave_fastq (7)       [ 72%] 8 of 11
+[42/b0ceb2] process > mitobim_reconstruction (8) [ 50%] 4 of 8
+
+executor >  local (35)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[13/cbcb02] process > interleave_fastq (7)       [ 72%] 8 of 11
+[14/a3e772] process > mitobim_reconstruction (5) [ 62%] 5 of 8
+
+executor >  local (36)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[f0/ad9e90] process > interleave_fastq (8)       [ 81%] 9 of 11
+[77/b9dd07] process > mitobim_reconstruction (9) [ 55%] 5 of 9
+
+executor >  local (37)
+[54/681b01] process > fastqc (5)                  [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)             [100%] 11 of 11, cached: 1 ✔
+[4f/0adfc0] process > interleave_fastq (9)        [ 90%] 10 of 11
+[8a/43b83d] process > mitobim_reconstruction (10) [ 50%] 5 of 10
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                  [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)             [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)       [100%] 11 of 11 ✔
+[a9/fb53ff] process > mitobim_reconstruction (11) [ 45%] 5 of 11
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                  [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)             [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)       [100%] 11 of 11 ✔
+[a9/fb53ff] process > mitobim_reconstruction (11) [ 45%] 5 of 11
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)      [100%] 11 of 11 ✔
+[5c/23758e] process > mitobim_reconstruction (7) [ 54%] 6 of 11
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)      [100%] 11 of 11 ✔
+[42/b0ceb2] process > mitobim_reconstruction (8) [ 63%] 7 of 11
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)      [100%] 11 of 11 ✔
+[77/b9dd07] process > mitobim_reconstruction (9) [ 72%] 8 of 11
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                  [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)             [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)       [100%] 11 of 11 ✔
+[8a/43b83d] process > mitobim_reconstruction (10) [ 81%] 9 of 11
+
+executor >  local (38)
+[54/681b01] process > fastqc (5)                 [100%] 11 of 11, cached: 5 ✔
+[57/bd065d] process > trimmomatic (5)            [100%] 11 of 11, cached: 1 ✔
+[82/e4fe9b] process > interleave_fastq (10)      [100%] 11 of 11 ✔
+[9b/dcd966] process > mitobim_reconstruction (6) [ 90%] 10 of 11
