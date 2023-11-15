@@ -1,7 +1,7 @@
 # Construction of mitochondrial reference genomes of the Presbytis femoralis group using multiple sequence alignment for new species identification
 ## ZB4171-Mandolin: Ng Jing Ting, Quek Zhi Heng, and Tay Hui Yi
 
-This project was done under ZB4171, a module under the National University of Singapore. 
+This project was done under ZB4171, a module from the National University of Singapore. 
 
 Our project explores prior work done by Meier et. al (2020). Contrary to what was done in their work, we suggest the use of all available samples for P. f. percura and P. f. presbytis to construct multiple proposed reference genomes for each sample before using multiple sequence alignment to produce a final reference genome that chooses the most conserved sample instead of relying solely on coverage. A comparison between the results of this method and the paper could shed light on potential sample biases and serve to validate the results of the study.
 
@@ -10,6 +10,7 @@ This repository contains a the dataset and code files required to replicate the 
 ## EC2 specificiations and set up
 - Recommended instance type: c5.4xlarge
 - Recommended storage size: >= 100 GB
+  
 In the case where an extra volume is required, you may need to create and mount the new volume: https://devopscube.com/mount-ebs-volume-ec2-instance/
 
 ## Downloading conda
