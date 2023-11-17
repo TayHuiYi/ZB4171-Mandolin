@@ -57,21 +57,21 @@ Carry out prefetch and fastq-dump (eg):
 5. Select your instance that you are running (if you don't see it likely the ec2 instance is not in ap-southeast-1a,change it)
 6. For device name, change where appropriate (eg. the last letter of device name) 
 7. Once the attaching and all is done, ssh into your ec2 instance
-8. Type the command “lsblk” and check that there is a new disk is there (likely it's called nvme1n1)
-9. Type the command: “sudo mkfs -t xfs /dev/nvme1n1”
-10. Type the command “sudo file -s /dev/nvme1n1” and check that the output should looks something like:  “SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)”
-11. Type the command: “sudo mkdir /shared_drive_{your initials}” eg.(sudo mkdir /shared_drive_zh)
-12. Type “sudo chmod 777 /shared_drive_{your initials}”
-13. Type the command: “sudo mount /dev/nvme1n1 /shared_drive_{your initials}”
-14. Type “sudo cp /etc/fstab /etc/fstab.orig” to back up the original file in case there are errors
-15. Type “sudo blkid” and copy the UUID of the /dev/nvme1n1 device 
-16.Type “sudo vim /etc/fstab”
-17. Add the following line to the end of the file: “UUID={copied UUID from step 11}  /shared_drive_{your initials}  xfs  defaults,nofail  0  2”
+8. Type the command `lsblk` and check that there is a new disk is there (likely it's called nvme1n1)
+9. Type the command: ```sudo mkfs -t xfs /dev/nvme1n1```
+10. Type the command `sudo file -s /dev/nvme1n1` and check that the output should looks something like:  “SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)”
+11. Type the command: ```sudo mkdir /shared_drive_{your initials}``` eg.(`sudo mkdir /shared_drive_zh`)
+12. Type the command: ```sudo chmod 777 /shared_drive_{your initials}```
+13. Type the command: ```sudo mount /dev/nvme1n1 /shared_drive_{your initials}```
+14. Type `sudo cp /etc/fstab /etc/fstab.orig` to back up the original file in case there are errors
+15. Type `sudo blkid` and copy the UUID of the /dev/nvme1n1 device 
+16. Type `sudo vim /etc/fstab`
+17. Add the following line to the end of the file: ```UUID={copied UUID from step 11}  /shared_drive_{your initials}  xfs  defaults,nofail  0  2```
 18. Save the changes on the file and exit Vim
-19. Type the command: “sudo umount /shared_drive_{your initials}”
-20. Type the command “sudo mount -a”
+19. Type the command: `sudo umount /shared_drive_{your initials}`
+20. Type the command `sudo mount -a`
 21. Reboot your ec2 instance and ssh in again
-22. Type “df -h” and see if the /shared_drive_{your initials} path appears in the last column
+22. Type `df -h`` and see if the /shared_drive_{your initials} path appears in the last column
 
 ## To add other members volumes to your instance:
 - You would require the links of the volume IDs of other members
