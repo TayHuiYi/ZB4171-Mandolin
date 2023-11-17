@@ -71,7 +71,7 @@ Carry out prefetch and fastq-dump (eg):
 19. Type the command: `sudo umount /shared_drive_{your initials}`
 20. Type the command `sudo mount -a`
 21. Reboot your ec2 instance and ssh in again
-22. Type `df -h`` and see if the /shared_drive_{your initials} path appears in the last column
+22. Type `df -h` and see if the /shared_drive_{your initials} path appears in the last column
 
 ## To add other members volumes to your instance:
 - You would require the links of the volume IDs of other members
