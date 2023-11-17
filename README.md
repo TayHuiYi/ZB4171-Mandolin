@@ -9,7 +9,7 @@ This repository contains a the dataset and code files required to replicate the 
 
 ## EC2 specificiations and set up
 - Recommended instance type: c5.4xlarge
-- Recommended storage size: >= 100 GB
+- Recommended storage size: >= 250 GB
   
 In the case where an extra volume is required, you may need to create and mount the new volume: https://devopscube.com/mount-ebs-volume-ec2-instance/
 
@@ -54,10 +54,10 @@ Carry out prefetch and fastq-dump (eg):
 2. Select “io2” for Volume Type, enable multi-attach and ensure that the availability zone is correct (same as your instance)
 3. Click on the link of the volume you just created and copy paste the volume ID of the newly created volume and paste it below once you are done with all the steps
 4. Under actions select “Attach Volume”
-5. Select your instance that you are running (if you dun see it likely the ec2 instance not in 1a, need to change it)
+5. Select your instance that you are running (if you don't see it likely the ec2 instance is not in ap-southeast-1a,change it)
 6. For device name, change where appropriate (eg. the last letter of device name) 
 7. Once the attaching and all is done, ssh into your ec2 instance
-8. Type the command “lsblk” and check that there is a new disk is there (likely is called nvme1n1)
+8. Type the command “lsblk” and check that there is a new disk is there (likely it's called nvme1n1)
 9. Type the command: “sudo mkfs -t xfs /dev/nvme1n1”
 10. Type the command “sudo file -s /dev/nvme1n1” and check that the output should looks something like:  “SGI XFS filesystem data (blksz 4096, inosz 512, v2 dirs)”
 11. Type the command: “sudo mkdir /shared_drive_{your initials}” eg.(sudo mkdir /shared_drive_zh)
