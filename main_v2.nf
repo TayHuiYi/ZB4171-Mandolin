@@ -3,7 +3,7 @@
 // path to parameters
 params.yml = '/home/ec2-user/ZB4171-Mandolin/env.yml'
 params.input = '/home/ec2-user/ZB4171-Mandolin/samplesheet_all_v2.csv'
-params.ref = '/home/ec2-user/ZB4171-Mandolin/reference/KU899140.1_sequence.fasta'
+params.ref = '/shared_drive_hy/17112023_work/KU899140.1_sequence.fasta'
 
 // initiate parameters to channels
 Channel.fromPath(file(params.input))
@@ -36,7 +36,7 @@ process fastqc {
 }
 
 process trimmomatic {
-        publishDir path: "${params.publishdir}/2_trimmomatic"
+        publishDir path: "${params.publishdir}/2_trimmomatic",mode:"copy"
 	conda "${params.yml}"
 
         input:
@@ -79,8 +79,8 @@ process interleave_fastq {
 }
 
 process mitobim_reconstruction {
-	publishDir path: "${params.publishdir}/4_mitobim"
-        container "chrishah/mitobim"
+	publishDir path: "${params.publishdir}/4_mitobim",mode:'copy'
+        container "chrishah/mitobim:v.1.9"
 	containerOptions = "--user root"
 
 	input:
@@ -92,7 +92,7 @@ process mitobim_reconstruction {
 
 	script:
 	"""
-	/home/src/scripts/MITObim.pl -start 1 -end 30 -sample ${sample_id} -ref KU899140.1 -readpool ${interleaved_fastq} --quick /shared_drive_hy/KU899140.1_sequence.fasta --paired --clean > ${sample_id}_log
+	/home/src/scripts/MITObim.pl -start 1 -end 30 -sample ${sample_id} -ref KU899140.1 -readpool ${interleaved_fastq} --quick ${ref} --paired --clean > ${sample_id}_log
 	mkdir ${sample_id}
 	pattern="iteration*"
 	output_dir="${sample_id}/"
