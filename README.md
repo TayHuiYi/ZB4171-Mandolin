@@ -78,3 +78,18 @@ Carry out prefetch and fastq-dump (eg):
 - Repeat steps 1, 2, 3, 9. For each new volume that you attach, the nvme path will change so its likely to be nvme1n2/nvme1n3, for that just change the path accordingly in the respective steps.
 - Replace the initials (names) where appropriate
 
+## MITOS Annotation Results
+
+| Accession Number | Sample ID | Species | MITOS Annotation Link |
+|:----------------:|:---------:|:-------:|:---------------:|
+| SRR10277267 | BLM5 | *Presbytis femoralis femoralis* | [BLM5](http://mitos.bioinf.uni-leipzig.de/result.py?hash=xa4K05aI) |
+| SRR10277268 | BLM4 | *Presbytis femoralis femoralis* | [BLM4](http://mitos.bioinf.uni-leipzig.de/result.py?hash=PT2Aj1sw) |
+| SRR10277269 | BLM3 | *Presbytis femoralis femoralis* | [BLM3](http://mitos.bioinf.uni-leipzig.de/result.py?hash=Obpy1si2) |
+| SRR10277270 | BLM2 | *Presbytis femoralis femoralis* | [BLM2](http://mitos.bioinf.uni-leipzig.de/result.py?hash=d6tbfPru) |
+| SRR10277271 | BLM1 | *Presbytis femoralis femoralis* | [BLM1](http://mitos.bioinf.uni-leipzig.de/result.py?hash=PTWwgweN) |
+| SRR10277272 | Pres2 | *Presbytis siamensis cf. cana* | [Pres2](http://mitos.bioinf.uni-leipzig.de/result.py?hash=UUpNqQ8k) |
+| SRR10277273 | ESBL_8b | *Presbytis femoralis percura* | No reconstructed reference |
+| SRR10277274 | ESBL_6a | *Presbytis femoralis percura* | [ESBL_6a](http://mitos.bioinf.uni-leipzig.de/result.py?hash=iOpxEfIY) |
+| SRR10277275 | BLM6 | *Presbytis femoralis femoralis* | [BLM6](http://mitos.bioinf.uni-leipzig.de/result.py?hash=tYXWqH1k) |
+| SRR10277276 | ESBL_5 | *Presbytis femoralis percura* | [ESBL_5](http://mitos.bioinf.uni-leipzig.de/result.py?hash=HwSBUtGg) |
+| SRR10277277 | ESBL_1a | *Presbytis femoralis percura* | [ESBL_1a](http://mitos.bioinf.uni-leipzig.de/result.py?hash=m3il2tFj) |
